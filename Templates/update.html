@@ -1,0 +1,29 @@
+<h1>LIBRARY MANAGEMENT SYSTEM</h1>
+
+<div class="col-6">
+    {% if data %}
+    <form method="post">
+        <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Book Name" required>
+        <br>
+
+        <input type="text" class="form-control" id="txtAuthor" name="txtAuthor" placeholder="Author Name" required>
+        <br>
+
+        <input type="number" class="form-control" id="txtPrice" name="txtPrice" placeholder="Book Price" required>
+        <br>
+
+        <input type="text" class="form-control" id="txtPb" name="txtPb" placeholder="Publication Name" required>
+        <br>
+
+        <input type="date" class="form-control" id="txtPbd" name="txtPbd" placeholder="Publication Date" required>
+        <br>
+    
+        <input type="submit" value="Update Book" class="btn btn-primary">
+    </form>
+  {% endif %}
+  {% if message %}
+    <div class="alert alert-info">
+      {{message}}
+    </div>
+    {% endif %}
+</div>
